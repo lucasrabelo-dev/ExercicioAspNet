@@ -1,0 +1,14 @@
+﻿﻿@{
+ViewData["Title"] = "Bem-vindo";
+}
+
+<div class="container mt-5 text-center">
+    <div class="card p-5 shadow">
+        <h1 class="display-4">Seja bem-vindo, @User.Identity?.Name!</h1>
+        <p class="lead">Você está logado com sucesso no sistema.</p>
+        <hr class="my-4">
+        <form asp-action="Logout" method="post">
+            <button type="submit" class="btn btn-danger">Sair (Logout)</button>
+        </form>
+    </div>
+</div>
